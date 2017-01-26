@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { tokenNotExpired } from 'angular2-jwt';
 
-declare var Auth0LOck: any;
+declare var Auth0Lock: any;
 
 @Injectable()
 
 export class Auth{
   // configure Auth0
 
-  lock = new Auth0LOck('nKUSz9plHr0JaCyNB0RUweNAZrljpF5D','mzs.au.auth0.com', {});
+  lock = new Auth0Lock('nKUSz9plHr0JaCyNB0RUweNAZrljpF5D','mzs.au.auth0.com', {});
 
   constructor(){
     // Add callback for lock `authenticated` event
